@@ -81,7 +81,7 @@
     default_layer {
       bindings = <
         &ltk BLTH LG(LBKT) &ltk NAV LG(RBKT) &mkp RCLK &mo SCRLM
-        &mkp LCLK                                           &mkp MB4
+        &mkp LCLK                                           &mkp MB3
       >;
     };
     scroll_tap_layer {
