@@ -33,6 +33,15 @@
     };
 };
 
+&gpio0 {
+    fastbatcharge: fast-battery-charge {
+        gpio-hog;
+        gpios = <13 GPIO_ACTIVE_HIGH>;
+        output-low;
+        line-name = "Fast Battery Charge";
+    };
+};
+
 &pinctrl {
     spi0_default: spi0_default {
 
@@ -77,6 +86,7 @@
         y-input-code = <INPUT_REL_Y>;
 
         // duplex = <2048>; // required by 3-wire spi
+        force-awake;
     };
 };
 
